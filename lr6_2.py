@@ -30,7 +30,7 @@ for num in numbers:
         max_sum_mod_8_nums.append(num) 
  
 #Выводим результаты 
-print("Все возможные {}-разрядные числа из четных цифр:" 
+print("Все возможные {}-разрядные числа из четных цифр:")
 print(numbers) 
 print("Числа, оканчивающиеся на 0:") 
 print(numbers_ending_with_0) 
