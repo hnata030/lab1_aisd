@@ -11,13 +11,13 @@ def run_program():
     K = int(input_entry.get())
     digits = [0, 2, 4, 6, 8]
     
-    # Создание списка всех возможных К-разрядных чисел из четных цифр
+ #Нахождение всех К-разрядных чисел из четных цифр  
     numbers = []
     for i in range(10**(K-1), 10**K):
         num_str = str(i)
         if all(int(digit) in digits for digit in num_str):
             numbers.append(i)
-    
+    #Числа, оканчивающиеся на 0
     numbers_ending_with_0 = [num for num in numbers if num % 10 == 0]
     
     # Находждение чисел с максимальной суммой цифр по модулю 8
